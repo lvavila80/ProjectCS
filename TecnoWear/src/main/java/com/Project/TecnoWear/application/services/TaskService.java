@@ -8,7 +8,7 @@ import com.Project.TecnoWear.Domain.ports.in.*;
 import java.util.List;
 import java.util.Optional;
 
-public class taskService implements CreateTaskUseCase, RetrieveTaskUseCase, UpdateTaskUseCase, DeleteTaskUseCase, GetAdditionalTaskInfoUseCase {
+public class TaskService implements CreateTaskUseCase, RetrieveTaskUseCase, UpdateTaskUseCase, DeleteTaskUseCase, GetAdditionalTaskInfoUseCase {
 
 private final CreateTaskUseCase createTaskUseCase;
 private final RetrieveTaskUseCase retrieveTaskUseCase;
@@ -16,7 +16,7 @@ private final UpdateTaskUseCase updateTaskUseCase;
 private final DeleteTaskUseCase deleteTaskUseCase;
 private final GetAdditionalTaskInfoUseCase getAdditionalTaskInfoUseCase;
 
-    public taskService(CreateTaskUseCase createTaskUseCase, RetrieveTaskUseCase retrieveTaskUseCase, UpdateTaskUseCase updateTaskUseCase, DeleteTaskUseCase deleteTaskUseCase, GetAdditionalTaskInfoUseCase getAdditionalTaskInfoUseCase) {
+    public TaskService(CreateTaskUseCase createTaskUseCase, RetrieveTaskUseCase retrieveTaskUseCase, UpdateTaskUseCase updateTaskUseCase, DeleteTaskUseCase deleteTaskUseCase, GetAdditionalTaskInfoUseCase getAdditionalTaskInfoUseCase) {
         this.createTaskUseCase = createTaskUseCase;
         this.retrieveTaskUseCase = retrieveTaskUseCase;
         this.updateTaskUseCase = updateTaskUseCase;
